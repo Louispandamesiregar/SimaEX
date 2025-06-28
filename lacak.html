@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lacak Kiriman - SimaEx Solusi Kargo & Ekspedisi</title>
+    <meta name="description" content="Lacak status pengiriman Anda dengan SimaEx secara real-time menggunakan nomor resi. Cepat, mudah, dan akurat.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/global-style.css">
+    <link rel="stylesheet" href="css/lacak-style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="custom-cursor"></div>
+
+    <div class="fixed-video-background">
+        <video autoplay muted loop playsinline poster="images/postervideo.webp">
+            <source src="videos/video.mp4" type="video/mp4">
+            Browser Anda tidak mendukung tag video.
+        </video>
+    </div>
+
+    <div class="page-content-wrapper">
+        <div id="header-placeholder"></div>
+        <main>
+            <section class="page-title-area hero-content-overlay">
+                <div class="container">
+                    <h1>Lacak <span class="highlight">Kiriman</span> Anda</h1>
+                </div>
+            </section>
+
+            <section id="track-content-page" class="track-section content-section bg-darker"> 
+                <div class="container">
+                    <div class="track-wrapper">
+                        <div class="track-form-container">
+                            <h3 class="form-title">Masukkan Nomor Resi</h3>
+                            <p class="track-instruction">Dapatkan status terkini dari kiriman Anda secara real-time.</p>
+                            <form class="track-form">
+                                <div class="form-group floating-label-group">
+                                    <input type="text" id="tracking_number" name="tracking_number" placeholder=" " required autocomplete="off">
+                                    <label for="tracking_number">Contoh: SMX1234567890</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-search" aria-hidden="true"></i> Lacak Sekarang
+                                </button>
+                            </form>
+                            <div class="track-results-placeholder" style="display: none;">
+                                <p>Hasil pelacakan akan ditampilkan di sini...</p>
+                            </div>
+                        </div>
+                        <div class="track-faq">
+                            <h3 class="faq-title">Pertanyaan Umum</h3>
+                            <div class="faq-item">
+                                <h4>Bagaimana cara melacak kiriman saya?</h4>
+                                <p>Cukup masukkan nomor resi yang Anda terima dari kami ke dalam kolom di samping, lalu klik tombol "Lacak Sekarang".</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>Nomor resi saya tidak ditemukan, apa yang harus dilakukan?</h4>
+                                <p>Pastikan nomor yang Anda masukkan sudah benar. Jika masih tidak ditemukan, status mungkin sedang diperbarui. Silakan coba lagi dalam beberapa jam atau <a href="kontak.html">hubungi kami</a>.</p>
+                            </div>
+                             <div class="faq-item">
+                                <h4>Apa saja arti dari status pengiriman?</h4>
+                                <p>Setiap status menunjukkan posisi kiriman Anda, mulai dari "Manifested" (dijemput), "On-Transit" (dalam perjalanan), hingga "Delivered" (telah diterima).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+       <div id="footer-placeholder"></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

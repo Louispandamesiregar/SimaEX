@@ -1,0 +1,104 @@
+.track-section {
+    background-color: var(--bg-darker);
+}
+.track-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+.form-title, .faq-title {
+    font-size: 1.8rem;
+    color: var(--text-light);
+    margin-bottom: 10px;
+}
+.track-instruction {
+    color: var(--text-muted);
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+.form-group.floating-label-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+.floating-label-group input {
+    width: 100%;
+    padding: 16px 15px 8px 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+.floating-label-group label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: var(--text-muted);
+    pointer-events: none;
+    transform-origin: top left;
+    transition: all 0.2s ease-out;
+}
+.floating-label-group input:focus + label,
+.floating-label-group input:not(:placeholder-shown) + label {
+    transform: translateY(-22px) scale(0.8);
+    left: 10px;
+    color: var(--accent-color);
+    background-color: var(--bg-darker);
+    padding: 0 5px;
+}
+.floating-label-group input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+.track-form .btn-primary {
+    width: 100%;
+    padding: 15px 30px;
+    font-size: 1rem;
+}
+.track-form .btn-primary i {
+    margin-right: 8px;
+}
+.track-results-placeholder {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    border: 1px dashed var(--primary-color);
+    color: var(--text-muted);
+}
+.track-faq {
+    background-color: var(--primary-color);
+    padding: 30px;
+    border-radius: var(--border-radius);
+}
+.faq-item {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--bg-darker);
+}
+.faq-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+.faq-item h4 {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+.faq-item p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 0;
+}
+.faq-item a {
+    text-decoration: underline;
+}
+@media (max-width: 992px) {
+    .track-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
