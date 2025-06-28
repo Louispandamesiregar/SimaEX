@@ -8,7 +8,7 @@ Selamat datang di repository SimaEX, sebuah proyek website profil untuk layanan 
 ### **🚀 Link Demo Live**
 
 Anda bisa melihat versi live dari website ini yang di-hosting menggunakan GitHub Pages di sini:
-**[https://louispandamesiregar.github.io/SimaEX/](https://louispandamesiregar.github.io/SimaEX/)**
+**[https://louispandamesiregar.github.io/SimaEX/](https://louispandamesiregar.github.io/SimaEx/)**
 
 ---
 
@@ -37,7 +37,7 @@ Jika Anda ingin menjalankan proyek ini di komputer Anda sendiri:
 
 1.  **Clone repository ini:**
     ```bash
-    git clone [https://github.com/Louispandamesiregar/SimaEX.git](https://github.com/Louispandamesiregar/SimaEX.git)
+    git clone [https://github.com/Louispandamesiregar/SimaEx.git](https://github.com/Louispandamesiregar/SimaEx.git)
     ```
 2.  **Masuk ke direktori proyek:**
     ```bash
